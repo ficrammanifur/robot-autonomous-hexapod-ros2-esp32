@@ -275,7 +275,7 @@ graph TD
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/ficrammanifur/Robot-Pintar-Berbasis-Jetso-Nano.git
+git clone https://github.com/ficrammanifur/robot-autonomous-hexapod-ros2-esp32.git
 cd hexapod-ros2-robot
 ```
 
