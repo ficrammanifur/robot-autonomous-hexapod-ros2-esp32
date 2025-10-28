@@ -590,12 +590,12 @@ rqt_graph
 
 ## 🌍 Aplikasi Dunia Nyata
 
-### 1. Penjelajahan Medan Berbahaya (Rescue / Search Mission)
+### 🌍 1️⃣ Penjelajahan Medan Berbahaya (Rescue / Search Mission)
 
 **Masalah:**
 Ketika terjadi bencana alam seperti gempa, reruntuhan bangunan sering tidak stabil dan terlalu sempit untuk manusia atau drone roda.
 
-**Solusi Hexapoda:**
+**🤖 Solusi Hexapoda:**
 - Robot berkaki enam dapat melangkah di atas permukaan tidak rata tanpa terguling
 - Masuk ke celah reruntuhan yang sempit
 - Dilengkapi kamera ESP32-CAM + Jetson Nano YOLO detection untuk mencari bentuk tubuh manusia
@@ -606,12 +606,12 @@ Ketika terjadi bencana alam seperti gempa, reruntuhan bangunan sering tidak stab
 - ESP32 → Kontrol servo real-time untuk stabilitas langkah
 - micro-ROS → Komunikasi cepat antar node sensor–AI
 
-### 2. Inspeksi Area Industri Berbahaya
+### 🏭 2️⃣ Inspeksi Area Industri Berbahaya
 
 **Masalah:**
 Di kilang minyak, pabrik kimia, atau reaktor — manusia tidak bisa masuk sembarangan ke area dengan gas beracun, suhu tinggi, atau risiko ledakan.
 
-**Solusi Hexapoda:**
+**🤖 Solusi Hexapoda:**
 - Robot dapat dikirim untuk inspeksi rutin memakai sensor gas, suhu, dan kamera thermal
 - Dapat memanjat tangga atau melewati pipa besar yang tak bisa dilalui robot beroda
 - Bekerja autonomously dengan peta SLAM dari Jetson Nano
@@ -621,12 +621,12 @@ Di kilang minyak, pabrik kimia, atau reaktor — manusia tidak bisa masuk sembar
 - ESP32 → Kontrol servo adaptif (postur stabil)
 - ROS 2 → Komunikasi data sensor dan video ke pusat kontrol
 
-### 3. Eksplorasi Pertanian / Lingkungan Alam
+### 🌱 3️⃣ Eksplorasi Pertanian / Lingkungan Alam
 
 **Masalah:**
 Lahan pertanian dan hutan memiliki medan tidak rata dan berlumpur, menyulitkan robot roda untuk menjelajah atau memetakan kondisi tanaman.
 
-**Solusi Hexapoda:**
+**🤖 Solusi Hexapoda:**
 - Menjelajahi area pertanian tanpa merusak tanaman
 - Dilengkapi kamera Jetson Nano untuk deteksi kondisi daun (AI health detection)
 - Mengirim data kelembaban, suhu, dan gambar ke server ROS 2 untuk analisis
@@ -636,12 +636,12 @@ Lahan pertanian dan hutan memiliki medan tidak rata dan berlumpur, menyulitkan r
 - ESP32 → Kontrol servo & baca sensor tanah
 - ROS 2 DDS → Kirim hasil analisis ke dashboard web
 
-### 4. Eksperimen Militer & Medan Tak Terjangkau
+### 🏚️ 4️⃣ Eksperimen Militer & Medan Tak Terjangkau
 
 **Masalah:**
 Drone udara tidak bisa beroperasi lama di tempat tertutup (seperti gua atau bunker). Tank kecil tidak bisa melewati bebatuan atau tangga.
 
-**Solusi Hexapoda:**
+**🤖 Solusi Hexapoda:**
 - Bergerak seperti serangga melewati celah dan bebatuan
 - Kamera + Lidar Jetson Nano untuk navigasi otomatis di area gelap
 - ESP32 → Kontrol servo cepat untuk respon medan ekstrem
@@ -651,12 +651,12 @@ Drone udara tidak bisa beroperasi lama di tempat tertutup (seperti gua atau bunk
 - ROS 2 Nav2 stack → Autonomous navigation
 - Jetson Nano AI → Deteksi objek (senjata, manusia, pintu, cahaya)
 
-### 5. Edukasi & Penelitian Robotika Adaptif
+### 🦾 5️⃣ Edukasi & Penelitian Robotika Adaptif
 
 **Masalah:**
 Mahasiswa dan peneliti kesulitan belajar tentang robotika otonom multi-node (AI + kontrol real-time) dan integrasi AI dengan hardware embedded.
 
-**Solusi Hexapoda:**
+**🤖 Solusi Hexapoda:**
 Platform pembelajaran nyata:
 - Jetson Nano menjalankan perception & AI
 - ESP32 menjalankan control & sensing layer
