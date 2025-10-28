@@ -72,10 +72,14 @@ ROS 2 sudah memiliki fitur built-in yang setara dengan MQTT:
 ## 📸 Demo Singkat
 
 > Robot hexapoda mengenali gesture **wave** dari pengguna, lalu:
-> - Bergerak mendekat dengan gait pattern adaptif (mode otomatis)
-> - Menghindari hambatan menggunakan sensor ultrasonik
-> - Dapat dikontrol manual melalui web UI (mode manual)
-> - Merespons perintah AI untuk navigasi kompleks
+> - Bergerak mendekat dengan **gait pattern adaptif** (mode otomatis)  
+> - Menghindari hambatan menggunakan **sensor ultrasonik**  
+> - Dapat dikontrol manual melalui **web UI** (mode manual)  
+> - Merespons perintah **AI untuk navigasi kompleks**
+
+<p align="center">
+  <img src="/assets/Animated.gif" alt="Hexapod Robot ROS 2 System Demo" width="700"/>
+</p>
 
 ---
 
