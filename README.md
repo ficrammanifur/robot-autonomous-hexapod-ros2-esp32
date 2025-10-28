@@ -1,12 +1,24 @@
-# 🤖 Sistem Robot Pintar Berbasis Jetson Nano
+<h1 align="center">🤖 SISTEM ROBOT PINTAR BERBASIS JETSON NANO</h1>
 
-**Integrasi Gemini AI & Kontrol ESP32 melalui MQTT**
+<p align="center">
+  <img src="/placeholder.svg?height=400&width=700" alt="Smart Robot Jetson Nano System" width="700"/>
+</p>
 
-Proyek ini bertujuan membangun **sistem robot otonom cerdas** yang mampu:
-- Mendeteksi **gesture tangan (wave)** menggunakan **Visi Komputer (MediaPipe)** di **Jetson Nano**
-- Mengambil keputusan berbasis **Gemini AI Reasoning**
-- Mengontrol **motor dan perangkat IoT (lampu)** melalui **ESP32**
-- Menghubungkan seluruh sistem menggunakan protokol **MQTT** untuk komunikasi ringan dan real-time
+<p align="center">
+  <em>Sistem robot otonom cerdas yang mengintegrasikan Gemini AI, MediaPipe Vision, dan ESP32 IoT melalui protokol MQTT untuk navigasi dan kontrol real-time.</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/last%20commit-today-brightgreen" />
+  <img src="https://img.shields.io/badge/language-Python%20%7C%20C%2B%2B-blue" />
+  <img src="https://img.shields.io/badge/platform-Jetson%20Nano%20%7C%20ESP32-informational" />
+  <img src="https://img.shields.io/badge/ai-Gemini%20AI-orange" />
+  <img src="https://img.shields.io/badge/vision-MediaPipe-red" />
+  <img src="https://img.shields.io/badge/protocol-MQTT-green" />
+  <a href="https://github.com/ficrammanifur/jetson-nano-smart-robot/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT" />
+  </a>
+</p>
 
 ---
 
@@ -79,6 +91,7 @@ Proyek ini bertujuan membangun **sistem robot otonom cerdas** yang mampu:
 | **ESP32Servo.h** | Kontrol servo (opsional) |
 
 ---
+---
 
 ## 🏗️ Arsitektur Sistem
 
@@ -117,32 +130,24 @@ Proyek ini bertujuan membangun **sistem robot otonom cerdas** yang mampu:
 
 ### Flowchart Sistem
 
-```
-User Gesture / Voice
-        │
-        ▼
-[Jetson Nano]
-        │
-        ├─► MediaPipe - Deteksi Gesture
-        │
-        ├─► Gemini AI Reasoning
-        │
-        ├─► Publikasi Pesan MQTT
-        │
-        ▼
-[MQTT Broker - Mosquitto]
-        │
-        ▼
-[ESP32 Subscriber]
-        │
-        ├─► Motor Driver / Relay
-        │
-        ├─► Aksi Fisik (Bergerak / Lampu On)
-        │
-        ▼
-[Sensor Ultrasonik]
-        │
-        └─► Feedback ke ESP32
+```mermaid
+flowchart TD
+    A[User Gesture / Voice] --> B[Jetson Nano]
+    B --> C[MediaPipe - Deteksi Gesture]
+    B --> D[Gemini AI Reasoning]
+    B --> E[Publikasi Pesan MQTT]
+    E --> F[MQTT Broker - Mosquitto]
+    F --> G[ESP32 Subscriber]
+    G --> H[Motor Driver / Relay]
+    G --> I[Aksi Fisik <br/> Bergerak / Lampu On]
+    I --> J[Sensor Ultrasonik]
+    J --> K[Feedback ke ESP32]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style F fill:#fff3e0
+    style G fill:#e8f5e8
+    style I fill:#ffebee
 ```
 
 ---
@@ -215,11 +220,11 @@ print("✅ MQTT client installed")
 print("✅ Gemini AI SDK installed")
 print("✅ All dependencies ready!")
 EOF
-\`\`\`
+```
 
 #### Setup Gemini API Key
 
-\`\`\`bash
+```bash
 # Edit file konfigurasi
 nano jetson/config.py
 
@@ -445,7 +450,7 @@ print(response.text)
 ```
 
 **Solusi:**
-\`\`\`bash
+```bash
 # Check connected cameras
 ls /dev/video*
 
