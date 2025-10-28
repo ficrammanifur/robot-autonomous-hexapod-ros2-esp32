@@ -38,7 +38,7 @@
 - [Troubleshooting](#-troubleshooting)
 - [Struktur Folder](#-struktur-folder)
 - [Kontribusi](#-kontribusi)
-- [Pengembang](#-Pengembang)
+- [Pengembang](#-pengembang)
 - [Lisensi](#-lisensi)
 
 ---
@@ -139,28 +139,28 @@ ROS 2 sudah memiliki fitur built-in yang setara dengan MQTT:
 ### Diagram Blok Sistem ROS 2
 
 ```
-                ┌────────────────────────┐
+                ┌─────────────────────────┐
                 │  Jetson Nano (ROS 2)    │
-                │────────────────────────│
+                │─────────────────────────│
                 │  Node1: vision_node     │ → Deteksi gesture (MediaPipe/OpenCV)
                 │  Node2: ai_node         │ → Reasoning pakai Gemini AI API
                 │  Node3: control_node    │ → Publish command ke ESP32 nodes
                 │  Node4: motion_planner  │ → Path planning & obstacle avoidance
-                └───────────┬────────────┘
+                └───────────┬─────────────┘
                             │ UDP (DDS)
                             ▼
-     ┌────────────────────────────┐
-     │ ESP32 Board (ROS 2 Micro)  │
-     │────────────────────────────│
-     │ Node: servo_controller     │ → Gerakkan 18 servo kaki
-     │ Node: ultrasonic_sensor    │ → Publikasi jarak obstacle
-     │ Node: imu_sensor           │ → Publikasi orientasi robot
-     └───────────┬───────────────┘
-                 │
-                 ▼
-     ┌──────────────────────────┐
-     │ Router WiFi / LAN lokal  │
-     └──────────────────────────┘
+               ┌───────────────────────────┐
+               │ ESP32 Board (ROS 2 Micro) │
+               │───────────────────────────│
+               │ Node: servo_controller    │ → Gerakkan 18 servo kaki
+               │ Node: ultrasonic_sensor   │ → Publikasi jarak obstacle
+               │ Node: imu_sensor          │ → Publikasi orientasi robot
+               └────────────┬──────────────┘
+                            │
+                            ▼
+               ┌──────────────────────────┐
+               │ Router WiFi / LAN lokal  │
+               └──────────────────────────┘
 ```
 
 ### Diagram Alur Data ROS 2
