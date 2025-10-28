@@ -98,7 +98,8 @@ ROS 2 sudah memiliki fitur built-in yang setara dengan MQTT:
 | **Gemini AI API (via Python)** | Pemrosesan bahasa & reasoning | Menerjemahkan gesture atau perintah verbal menjadi aksi logis |
 
 <p align="center">
-  <img src="/assets/examwiring.png" alt="Hexapod Robot ROS 2 System Demo" width="700"/>
+  <img src="/assets/examwiring.png" alt="Hexapod Robot ROS 2 System Wiring Diagram" width="700"/><br/>
+  <em>📘 Example Wiring Diagram — ROS 2 Hexapod Integration</em>
 </p>
 
 ---
