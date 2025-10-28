@@ -38,7 +38,7 @@
 - [Troubleshooting](#-troubleshooting)
 - [Struktur Folder](#-struktur-folder)
 - [Kontribusi](#-kontribusi)
-- [Pengembang](#-pengembang)
+- [Pengembang](#-Pengembang)
 - [Lisensi](#-lisensi)
 
 ---
