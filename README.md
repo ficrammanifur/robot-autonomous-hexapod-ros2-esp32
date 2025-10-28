@@ -1,7 +1,7 @@
 <h1 align="center">🦿 ROBOT HEXAPODA BERBASIS ROS 2</h1>
 
 <p align="center">
-  <img src="/placeholder.svg?height=400&width=700" alt="Hexapod Robot ROS 2 System" width="700"/>
+  <img src="/assets/Animated.png?height=400&width=700" alt="Hexapod Robot ROS 2 System" width="700"/>
 </p>
 
 <p align="center">
