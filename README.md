@@ -78,9 +78,10 @@ ROS 2 sudah memiliki fitur built-in yang setara dengan MQTT:
 > - Merespons perintah **AI untuk navigasi kompleks**
 
 <p align="center">
-  <img src="/assets/Animated.gif" alt="Hexapod Robot ROS 2 System Demo" width="700"/>
+  <img src="/assets/Animated.gif" alt="Hexapod Robot ROS 2 System Demo" width="700"/><br/>
+  <em> Example Animation Hexapod Integration</em>
 </p>
-<em> Example Animation</em>
+
 ---
 
 ## 🧩 Komponen Utama dan Fungsinya
