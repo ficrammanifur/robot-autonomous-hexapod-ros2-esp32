@@ -97,6 +97,10 @@ ROS 2 sudah memiliki fitur built-in yang setara dengan MQTT:
 | **Wi-Fi Router / Hotspot** | Jaringan DDS | Menghubungkan Jetson Nano dan ESP32 dalam ekosistem ROS 2 |
 | **Gemini AI API (via Python)** | Pemrosesan bahasa & reasoning | Menerjemahkan gesture atau perintah verbal menjadi aksi logis |
 
+<p align="center">
+  <img src="/assets/examwiring.png" alt="Hexapod Robot ROS 2 System Demo" width="700"/>
+</p>
+
 ---
 
 ## 💻 Software & Library
